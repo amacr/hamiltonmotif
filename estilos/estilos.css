@@ -1,0 +1,36 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.container {
+    display: flex;
+}
+aside {
+    height: 100vh;;
+    position: sticky;
+    top: 10px;
+}
+/*#contenido-sidebar {
+    display: none;
+}*/
+.motif {
+    padding: 3px 0;
+    background-color: lightyellow;
+
+}
+.motif:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hamilton > * > span.motif {
+    background-color: aquamarine;;
+} 
+.burr > * > span.motif {
+    background-color: lavender;
+}
+
+.song {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}

@@ -1,30 +1,12 @@
-/**
- * Variable global que se llena usando datos del json prueba.json.
- */
+// Se declaran variables globales
+var jsonurl = "js/datos.json"
 var misdatos ="";
-
-
-
-/**
- * Variable global que representa elemento DOM donde aparecen datos dinamicos.
- */
 var sidebar = document.getElementById("sidebar-content");
-
-
-
-/**
- * Variable global que representa elemento DOM usado para iframe player.
- */
 var playerSpotify = document.getElementById("player");
+var vizArc = document.getElementById("arc-viz");
 
 
-/**
- * Al cargarse el DOM carga los datos del json.
- * @var jsonurl
- * La variable jsonurl está en el html.
- * @var misdatos
- * El resultado de la llamada se guarda en la variable misdatos.
- */
+// Carga los datos del jason en "misdatos"
 document.addEventListener("DOMContentLoaded", function api() {
     fetch( jsonurl )
     .then(res => res.json())
@@ -35,47 +17,57 @@ document.addEventListener("DOMContentLoaded", function api() {
 
 
 
-/**
- * Borra el contenido dinámico de la pantalla.
- */
+// Borra el contenido dinámico anterior
 var resetCanvas = function () {
     sidebar.innerHTML = "";
+    vizArc.className = "";
+
 };
 
 
 
-/**
- * Del elemento "el" obtiene y muestra los datos del motif 
- * @param {HTMLElement} el
- */
+// función para obtener los datos del json
 var createContent = function(el) {
-    /* obtiene el id para buscar en el json */
+    // obtiene el id de la clase para buscar en el json
     const jsonId = el.className.replace("motif ", "");
 
-    /** 
-     * recorre el json y si encuentra el elemento de id jsonId
-     * entonces muestra el elemento.
-     */
+    // valida que la clase pertenezca al motif correspondiente
     for (var i = 0; i < misdatos.motifs.length; ++i) {
         var currentMotif = misdatos.motifs[i];
         if (currentMotif.id == jsonId) {
+            //Función que musetra los contenidos del json
             mostrar(i);
+
+            // Funcion para poner color a los arcos de los motifs correspondientes
+            paintArc(currentMotif.id);
         }
+
     }
 };
 
 
+//función que agrega una clase "active" a los arcos del motif seleccionado. 
+function paintArc (y) {
+    resetArcClass(); 
+    const arcClass = document.getElementsByClassName(y);
+    for (let i=0; i < arcClass.length; i++){
+            arcClass[i].classList.add("active");
+    }
+};
 
-/**
- * Agrega un EventListener para cada motif.
- * Si se hace click sobre el elemento entonces se crea el
- * contenido y se muestra en pantalla.
- */
+function resetArcClass () {
+    const arcClassActive = document.querySelectorAll('g.active');
+        for (let i=0; i < arcClassActive.length; i++){
+            arcClassActive[i].classList.remove("active");
+    }
+}
+
+// Agrega un EventListener para que cada motif muestre datos al hacer clic
 var addEventListenersMotif = function() {
-    /* arreglo con todos los elementos que tienen clase motif */
+    // arreglo con todos los elementos que tienen clase motif
     const motifElements = document.querySelectorAll(".motif");
 
-    /* Se agrega el EventListener a cada elemento */
+    // Se agrega el EventListener a cada elemento
     for (let i = 0; i < motifElements.length; i++) {
         let item = motifElements[i];
         item.addEventListener('click', function(){
@@ -86,24 +78,13 @@ var addEventListenersMotif = function() {
 
 };
 
-
-
-/**
- * Crea una canción del listado.
- * 
- * @param {array} llave
- * - Arreglo con el listado de datos.
- * @param {*} i 
- * - Índice de la canción dentro del listado.
- * @returns
- * - devuelve un elemento HTML que representa la canción.
- */
+// Crea una canción del listado.
 var buildSong = function(llave, i) {
-    /* variable que almacena la canción específica del listado */
+
+    // Se llama la canción en el json
     let songData = llave.songs[i];
 
-    /* Variable que almacena el elemento de la canción */
-    /* En este caso, es un "li" dentro de un listado */
+    // Se crea el elemento li con el nombre
     const song = document.createElement("li");
     song.innerHTML = songData.song_name;
 
@@ -112,6 +93,7 @@ var buildSong = function(llave, i) {
         song.setAttribute("song", songData.uri_spotify);
         song.addEventListener('click', function(){
             playerSpotify.src =songData.uri_spotify;
+            console.log(songData.uri_spotify)
         });
         song.classList.add ("song");
     }
@@ -121,60 +103,60 @@ var buildSong = function(llave, i) {
 
 
 
-/**
- * Construye el contenido dinámico y lo presenta en pantalla.
- * @param {Int} x
- * - Índice del motif dentro del arreglo de motifs.
- */
+// Construye el contenido dinámico y lo presenta en pantalla.
 var mostrar = function (x) {
-    /* llave es el listado de atributos del motif */
+    // llave permite acceder al listado de atributos del motif
     var llave = misdatos.motifs[x];
 
-    /* Se elimina de pantalla los datos dinámicos */
+    // Se elimina de pantalla los datos dinámicos
     resetCanvas(); 
 
-    /* Se crea un div con la clase del motif y se agrega a 
-    contenido dinámico */
+    // Se crea un div con la clase del motif y se agrega a contenido dinámico
     var contenidos = document.createElement("div");
     contenidos.classList.add (llave.class);
     sidebar.appendChild(contenidos);
     
-    /* Se crea un elemento de título con el nombre del motif
-    y se agrega el contenido */
+    // Se crea un elemento de título con el nombre del motif y se agrega el contenido
     var leitmotif = document.createElement("h2");
     leitmotif.innerHTML = "Leitmotif: "+llave.name;
     contenidos.appendChild(leitmotif);
-    
-    /* Se agrega la descripción del motif y se agrega al contenido */
-    var motifText = document.createElement("p");
-    motifText.innerHTML = "Leitmotif: "+llave.texto_motif;
-    contenidos.appendChild(motifText);
 
-    /* Se agrega la descripción del personaje y se agrega al contenido */
+    // Se agrega la descripción del personaje y se agrega al contenido
     var character = document.createElement("h3");
     character.innerHTML = "Personaje: "+llave.character;
     contenidos.appendChild(character);
 
-    /* Se agrega un subtítulo para el listado de canciones */
+    // Se agrega la descripción del motif y se agrega al contenido
+    var motifText = document.createElement("div");
+    motifText.innerHTML = llave.texto_motif;
+    contenidos.appendChild(motifText);
+
+    // Se agrega un subtítulo para el listado de canciones
     var songs = document.createElement("h3");
     songs.innerHTML = "Canciones: ";
     contenidos.appendChild(songs);
 
-    /* Se crea el listado de canciones */
+    var songsText = document.createElement("p");
+    songsText.innerHTML = "Haz clic en una canción para cargarla en el player y escuchar el motif (requiere estar logueado en una cuenta de Spotify en el navegador para escucharlas todas).";
+    contenidos.appendChild(songsText);
+
+    // Se crea el listado de canciones
     var songList = document.createElement("ul");
     contenidos.appendChild(songList);
     playerSpotify.src =llave.songs[0].uri_spotify;
     for (i=0; i < llave.songs.length; i++) {
         songList.appendChild(buildSong(llave, i));
-    };    
+    };
+
+    // Se agrega clase personaje a div arc
+    vizArc.classList.add (llave.class);
+    
 };
 
-
-
-/* Se ejecuta la función para llamar a toda la funcionalidad */
+// Se ejecuta la función para llamar a toda la funcionalidad
 addEventListenersMotif();
 
-
+//Controlador slideshow header
 let currentIndex = 1;
 
 function moveSlide(direction) {
@@ -213,6 +195,6 @@ function currentSlide(n) {
 }
 
 // Auto-play opcional (cada 5 segundos)
-setInterval(() => {
+/*setInterval(() => {
     moveSlide(1);
-}, 5000);
+}, 5000);*/

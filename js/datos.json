@@ -6,7 +6,7 @@
             "name": "Just you wait",
             "class": "hamilton",
             "character": "Alexander Hamilton",
-            "texto_motif":"TO DO",
+            "texto_motif":"<p>Cuando el musical presenta a Alexander Hamilton, este acaba de llegar como un inmigrante a la ciudad de Nueva York desde la isla caribeña de Saint Croix, en ese entonces parte de las Indias Orientales Danesas, con el auspicio de una familia mercante local.</p><p>Huérfano y sin familia, Hamilton está decidido a hacer algo por triunfar en la vida. Esta ambición se presenta en todo el primer acto desde sus estudios en leyes en King's College, su participación como oficial en la guerra de Independencia, hasta consolidarse como Secretario del Tesoro para el primer presidente de los EEUU en la canción “Non Stop”. Este leitmotif no aparece en el segundo acto.</p>",
             "songs":
             [
                 {
@@ -31,7 +31,7 @@
                     "song_act": 1,
                     "song_sang_by":"Alexander Hamilton",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/3dP0pLbg9OfVwssDjp9aT0?utm_source=generator&t=205"
                 },
                 {
                     "song_name": "Non stop",
@@ -39,7 +39,7 @@
                     "song_act": 1,
                     "song_sang_by":"Alexander Hamilton",
                     "song_text":"TO DO",
-                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator"
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=608"
                 }
             ]
         },
@@ -56,7 +56,7 @@
                     "song_act": 1,
                     "song_sang_by":"George Washington",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/3nJYcY9yvKP8Oi2Ml8brXt?utm_source=generator&t=114"
                 },
                 {
                     "song_name": "Guns and ships",
@@ -64,7 +64,7 @@
                     "song_act": 1,
                     "song_sang_by":"George Washington",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7m9XR7FquXLP1FewdAcNS9?utm_source=generator&t=112"
                 },
                 {
                     "song_name": "Non stop",
@@ -72,7 +72,7 @@
                     "song_act": 1,
                     "song_sang_by":"George Washington",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=513"
                 }
                 
             ]
@@ -85,20 +85,12 @@
             "texto_motif":"TO DO",
             "songs":[
                 {
-                    "song_name": "Right hand man",
-                    "song_id":"c8",
+                    "song_name": "History has it's eyes on you",
+                    "song_id":"c19",
                     "song_act": 1,
                     "song_sang_by":"George Washington",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
-                },
-                {
-                    "song_name": "Guns and ships",
-                    "song_id":"c18",
-                    "song_act": 1,
-                    "song_sang_by":"George Washington",
-                    "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/1mGO8rwCE9zk7H06OxcU5m?utm_source=generator"
                 },
                 {
                     "song_name": "Non stop",
@@ -106,7 +98,23 @@
                     "song_act": 1,
                     "song_sang_by":"George Washington",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=549"
+                },
+                {
+                    "song_name": "One last time",
+                    "song_id":"c32",
+                    "song_act": 1,
+                    "song_sang_by":"George Washington",
+                    "song_text":"TO DO",
+                    "uri_spotify": "https://open.spotify.com/embed/track/0Iys022UwQ8xBfxE1g4nWZ?utm_source=generator"
+                },
+                {
+                    "song_name": "Hurricane",
+                    "song_id":"c36",
+                    "song_act": 1,
+                    "song_sang_by":"George Washington",
+                    "song_text":"TO DO",
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=206"
                 }
                 
             ]
@@ -124,7 +132,7 @@
                     "song_act": 1,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=&t=115"
+                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=115"
                 },
                 {
                     "song_name": "That would be enough",
@@ -132,7 +140,7 @@
                     "song_act": 1,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=&t=115"
+                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=115"
                 },
                 {
                     "song_name": "Non stop",
@@ -140,7 +148,7 @@
                     "song_act": 1,
                     "song_sang_by":"Alexander Hamilton",
                     "song_text":"TO DO",
-                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=&t=115"
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=308"
                 },
                 {
                     "song_name": "Take a break",
@@ -148,7 +156,7 @@
                     "song_act": 2,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=&t=115"
+                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=115"
                 },
                 {
                     "song_name": "It's quiet uptown",
@@ -156,7 +164,7 @@
                     "song_act": 2,
                     "song_sang_by":"Alexander Hamilton",
                     "song_text":"TO DO",
-                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=&t=115"
+                    "uri_spotify": "https://open.spotify.com/embed/track/71X7bPDljJHrmEGYCe7kQ8?utm_source=generator&t=115"
                 }
             ]
         },
@@ -173,7 +181,7 @@
                     "song_act": 1,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/54Sc7mZQ1RM03STpk4SfaA?utm_source=generator&t=011"
                 },
                 {
                     "song_name": "Satisfied",
@@ -181,7 +189,7 @@
                     "song_act": 1,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/3dP0pLbg9OfVwssDjp9aT0?utm_source=generator&t=240"
                 },
                 {
                     "song_name": "Non stop",
@@ -189,7 +197,7 @@
                     "song_act": 1,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=308"
                 },
                 {
                     "song_name": "Say no to this",
@@ -197,7 +205,7 @@
                     "song_act": 2,
                     "song_sang_by":"Maria Reynolds",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/3s9itRgJYcKhem01P17865?utm_source=generator&t=246"
                 }
             ]
         },
@@ -214,7 +222,7 @@
                     "song_act": 1,
                     "song_sang_by":"Angelica Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/3dP0pLbg9OfVwssDjp9aT0?utm_source=generator"
                 },
                 {
                     "song_name": "Non stop",
@@ -222,7 +230,7 @@
                     "song_act": 1,
                     "song_sang_by":"Angelica Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=543"
                 },
                 {
                     "song_name": "Reynold Panphlet",
@@ -230,7 +238,7 @@
                     "song_act": 2,
                     "song_sang_by":"Angelica Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7D1Lf7N7AtCuEq5PGJtIPz?utm_source=generator&t=101"
                 }
             ]
         },
@@ -247,7 +255,7 @@
                     "song_act": 1,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/6oF8ueLn5hIl4PRp17sxW6?utm_source=generator"
                 },
                 {
                     "song_name": "Non stop",
@@ -255,7 +263,7 @@
                     "song_act": 1,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=356"
                 },
                 {
                     "song_name": "It's quiet uptown",
@@ -263,7 +271,7 @@
                     "song_act": 2,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/40LYL1Z6xgCn5cBybo5K0D?utm_source=generator&t=144"
                 },
                 {
                     "song_name": "Best of wives",
@@ -271,7 +279,7 @@
                     "song_act": 2,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/1dZutYKh4BtPlxbC81wV34?utm_source=generator&t=023"
                 },
                 {
                     "song_name": "Who lives who dies who tells your story",
@@ -279,15 +287,15 @@
                     "song_act": 2,
                     "song_sang_by":"Eliza Schuyler",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7EsSVPxaYoAZjQwhspJBs2?utm_source=generator&t=222"
                 }
             ]
         },
         {
             "id": "m10",
             "name": "Take a stand",
-            "class": "hamilton",
-            "character": "Alexander Hamilton",
+            "class": "burr",
+            "character": "Aaron Burr",
             "texto_motif":"TO DO",
             "songs":[
                 {
@@ -296,7 +304,7 @@
                     "song_act": 1,
                     "song_sang_by":"Alexander Hamilton",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/6dr7ekfhlbquvsVY8D7gyk?utm_source=generator&t=217"
                 },
                 {
                     "song_name": "Non stop",
@@ -304,7 +312,7 @@
                     "song_act": 1,
                     "song_sang_by":"Alexander Hamilton",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=175"
                 },
                 {
                     "song_name": "The room where it happens",
@@ -362,7 +370,7 @@
                     "song_act": 1,
                     "song_sang_by":"Aaron Burr",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=189"
                 },
                 {
                     "song_name": "Room where it happens",
@@ -436,7 +444,7 @@
                     "song_act": 1,
                     "song_sang_by":"Alexander Hamilton",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=605"
                 },
                 {
                     "song_name": "The world was wide enough",
@@ -452,8 +460,8 @@
         {
             "id": "m13",
             "name": "Running out of time",
-            "class": "burr",
-            "character": "Aaron Burr",
+            "class": "hamilton",
+            "character": "Alexander Hamilton",
             "texto_motif":"TO DO",
             "songs":[
                 {
@@ -462,7 +470,7 @@
                     "song_act": 1,
                     "song_sang_by":"Burr",
                     "song_text":"TO DO",
-                    "uri_spotify": ""
+                    "uri_spotify": "https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&t=443"
                 },
                 {
                     "song_name": "Best of wives",

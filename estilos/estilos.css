@@ -1,8 +1,21 @@
 /* Importar fuentes elegantes con serifa de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
+/* Se define la paleta de colores con variables*/
+:root {
+--color-main: #d1921c;
+--color-dark: black;
+--color-text: white;
+--color-hamilton: #A7E3B3;
+--color-burr: #F2B6C1;
+--color-eliza: #B9E5F6;
+--color-angelica: #D3B5F7;
+--color-washington: #AFC6E7;
+}
+
+
 html {
-    background: #000000;
+    background: var(--color-dark);
     margin: 0;
     padding: 0;
 }
@@ -10,38 +23,63 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: #000000;
-    color: white;
+    background: var(--color-dark);
+    color: var(--color-text)
 }
 
-h1, h2 {
+main {
+    padding: 0 2rem 2rem;
+    width: 25vw;
+}
+
+aside {
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 10px;
+}
+
+h1, h2, h3 {
     font-family: 'Bodoni Moda SC', serif;
     font-weight: 400;
     letter-spacing: 3px;
-    color: white;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.2rem;
+}
+
+h2 {
     font-size: 2rem;
+}
+#sidebar-content > div > h2 {
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 p {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;  /* Muy delgada */
-    color: white;
+    font-weight: 400;
+    font-size: 1.05rem;
 }
 
 .hero {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .hero-title {
-    color: white;
     font-size: 2rem;
     letter-spacing: 8px;
     margin-top: 40px;
@@ -67,8 +105,8 @@ p {
 }
 
 .hero-button {
-    background: #d1921c;
-    color: black;
+    background: var(--color-main);
+    color: var(--color-dark);
     font-family: 'Bodoni Moda SC', serif;
     font-size: 1.2rem;
     letter-spacing: 4px;
@@ -85,10 +123,8 @@ p {
     transform: translateY(-2px);
 }
 
-.non-stop-section {
-    background: #000000;
-    padding: 80px 60px;
-    color: white;
+section {
+    padding: 40px 60px;
 }
 
 .content-wrapper {
@@ -178,7 +214,7 @@ p {
     right: 15px;
 }
 
-/* Indicadores */
+/* Indicadores Carrusel*/
 .carousel-indicators {
     position: absolute;
     bottom: 20px;
@@ -199,7 +235,7 @@ p {
 }
 
 .dot.active {
-    background: #d1921c;
+    background: var(--color-main);
 }
 
 .dot:hover {
@@ -208,22 +244,21 @@ p {
 
 .container {
     display: flex;
-    background: #000000;
 }
 
-aside {
-    height: 100vh;
-    position: sticky;
-    top: 10px;
-    color: white;
-}
+/*#sidebar-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 300px;
+    gap: 20px
+}*/
 
 .motif {
     padding: 3px 0;
     color: #000000; /* El texto dentro de los motifs es negro */
 }
 
-.motif:hover {
+.motif:hover, .song {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -248,23 +283,32 @@ aside {
     background-color: #D3B5F7;
 }
 
+.verse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
 .verse p {
-    margin-left: 88px;
-    color: white;
+    height: 100%;
+    font-weight: 600;
+    margin-block-start: 0.3rem;
+    margin-block-end: 0.3rem;
+    text-align: center;
 }
 
 .verse p.character {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: white;
     background-size: cover;
     background-position: center;
-    margin: 16px 0;
+    margin: 16px 0 8px;
     color: transparent;
+    clear: both;
 }
 
 .hamilton p.character {
@@ -285,4 +329,88 @@ aside {
 
 .angelica p.character {
     background-image: url('img/angelica.webp');
+}
+
+li.song {
+    padding: 3px 0;
+    color: var(--color-main);
+}
+
+li.song:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#sidebar-content > .hamilton {
+    color: var(--color-hamilton);
+}
+
+#sidebar-content > .burr {
+    color: var(--color-burr);
+}
+
+#sidebar-content > .eliza {
+    color: var(--color-eliza);
+}
+
+#sidebar-content > .angelica {
+    color: var(--color-angelica);
+}
+
+#sidebar-content > .washington {
+    color: var(--color-washington);
+}
+
+#sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Diagrama de arco*/
+
+.cls-2 {
+    font-size: 12px;
+    fill: var(--color-text);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+.cls-2, .cls-3 {
+    isolation: isolate;
+}
+
+.cls-3 {
+    fill: none;
+    opacity: .5;
+    stroke: gray;
+    stroke-width: 5px;
+}
+
+circle {
+    fill: var(--color-text);
+}
+
+div#arc-viz.hamilton > svg > g#arcs > g.arc.active > path.cls-3 {
+    stroke: var(--color-hamilton);
+    opacity: 100;
+}
+
+div#arc-viz.burr > svg > g#arcs > g.arc.active > path.cls-3 {
+    stroke: var(--color-burr);
+    opacity: 100;
+}
+
+div#arc-viz.eliza > svg > g#arcs > g.arc.active > path.cls-3 {
+    stroke: var(--color-eliza);
+    opacity: 100;
+}
+
+div#arc-viz.angelica > svg > g#arcs > g.arc.active > path.cls-3 {
+    stroke: var(--color-angelica);
+    opacity: 100;
+}
+
+div#arc-viz.washington > svg > g#arcs > g.arc.active > path.cls-3 {
+    stroke: var(--color-washington);
+    opacity: 100;
 }

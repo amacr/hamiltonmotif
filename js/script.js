@@ -173,3 +173,46 @@ var mostrar = function (x) {
 
 /* Se ejecuta la función para llamar a toda la funcionalidad */
 addEventListenersMotif();
+
+
+let currentIndex = 1;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Quitar clase active
+    slides[currentIndex - 1].classList.remove('active');
+    dots[currentIndex - 1].classList.remove('active');
+    
+    // Calcular nuevo índice
+    currentIndex += direction;
+    
+    if (currentIndex > slides.length) {
+        currentIndex = 1;
+    } else if (currentIndex < 1) {
+        currentIndex = slides.length;
+    }
+    
+    // Agregar clase active
+    slides[currentIndex - 1].classList.add('active');
+    dots[currentIndex - 1].classList.add('active');
+}
+
+function currentSlide(n) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    slides[currentIndex - 1].classList.remove('active');
+    dots[currentIndex - 1].classList.remove('active');
+    
+    currentIndex = n;
+    
+    slides[currentIndex - 1].classList.add('active');
+    dots[currentIndex - 1].classList.add('active');
+}
+
+// Auto-play opcional (cada 5 segundos)
+setInterval(() => {
+    moveSlide(1);
+}, 5000);

@@ -5,10 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encargo M2 Web</title>
     <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Miss+Fajardose&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
 <body>
+
+    <div class="hero">
+    <h1 class="hero-title">ANÁLISIS DE LEITMOTIF</h1>
+    
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+    <source src="estilos/img/hero-video.mp4" type="video/mp4">
+</video>
+    
+    
+</div>
+<button class="hero-button">NON-STOP</button>
+
+<section class="non-stop-section">
+    <h2>SIGNIFICADO E IMPLICANCIAS</h2>
+    <div class="content-wrapper">
+        <div class="text-content">
+            
+            <p>
+                La canción "Non-Stop" muestra la ambición y energía incansable de Alexander Hamilton después de la Guerra de Independencia. En ella se ve cómo se convierte en abogado, escribe los Papeles Federalistas y es nombrado Secretario del Tesoro, destacando por su impulso constante. También contrasta su carácter activo con el de Aaron Burr, más reservado, y muestra los sacrificios personales que su dedicación provoca, especialmente con Eliza, su esposa.
+            </p>
+            <p>
+                Además, "Non-Stop" reúne los leimotif de los personajes principales — Hamilton, Burr, Eliza, Angelica y Washington—, funcionando como una síntesis musical y emocional de la obra. Refleja el corazón del musical y de sus protagonistas, mostrando cómo sus motivaciones, deseos y conflictos se entrelazan en una misma gran energía: la de seguir adelante, sin detenerse.
+            </p>
+        </div>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="estilos/img/carrusel-01.jpg" alt="Hamilton Non-Stop 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="estilos/img/carrusel-02.webp" alt="Hamilton Non-Stop 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="estilos/img/carrusel-03.webp" alt="Hamilton Non-Stop 3">
+                </div>
+                <!-- Agrega más slides según necesites -->
+            </div>
+            
+            <!-- Controles -->
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+            
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+</section>
     <header>
-        <h1>Non stop</h1>
-        <p>TO DO: intro. </p>
+        <h1>non stop</h1>
     </header>
     <div class="container">
         <main>

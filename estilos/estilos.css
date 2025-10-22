@@ -1,36 +1,288 @@
+/* Importar fuentes elegantes con serifa de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
 html {
-    font-family: Helvetica, Arial, sans-serif;
+    background: #000000;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Bodoni Moda SC', serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;  /* Muy delgada */
+    color: white;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.hero-title {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Bodoni Moda SC', serif;
+    font-weight: 400;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.video-container video {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+.hero-button {
+    background: #d1921c;
+    color: black;
+    font-family: 'Bodoni Moda SC', serif;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    padding: 18px 80px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 200px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 400;
+}
+
+.hero-button:hover {
+    transform: translateY(-2px);
+}
+
+.non-stop-section {
+    background: #000000;
+    padding: 80px 60px;
+    color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 800px;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;;
+}
+
+.text-content h2 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    font-weight: 300;  /* Más delgado para el título */
+}
+
+/* Carrusel */
+.carousel-container {
+    flex: 1;
+    position: relative;
+    max-width: 700px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1);
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition:  0.3s ease;
+    border-radius: 4px;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-btn.prev {
+    left: 15px;
+}
+
+.carousel-btn.next {
+    right: 15px;
+}
+
+/* Indicadores */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+.dot.active {
+    background: #d1921c;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
 .container {
     display: flex;
+    background: #000000;
 }
+
 aside {
-    height: 100vh;;
+    height: 100vh;
     position: sticky;
     top: 10px;
+    color: white;
 }
-/*#contenido-sidebar {
-    display: none;
-}*/
+
 .motif {
     padding: 3px 0;
-    background-color: lightyellow;
-
+    color: #000000; /* El texto dentro de los motifs es negro */
 }
+
 .motif:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 .hamilton > * > span.motif {
-    background-color: aquamarine;;
+    background-color: #A7E3B3;
 } 
+
 .burr > * > span.motif {
-    background-color: lavender;
+    background-color: #F2B6C1;
 }
 
-.song {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
+.washington > * > span.motif {
+    background-color: #AFC6E7;
+}
+
+.eliza > * > span.motif {
+    background-color: #B9E5F6;
+}
+
+.angelica > * > span.motif {
+    background-color: #D3B5F7;
+}
+
+.verse p {
+    margin-left: 88px;
+    color: white;
+}
+
+.verse p.character {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    margin: 16px 0;
+    color: transparent;
+}
+
+.hamilton p.character {
+    background-image: url('img/hamilton.png');
+}
+
+.burr p.character {
+    background-image: url('img/burr.jpg');
+}
+
+.washington p.character {
+    background-image: url('img/washington.jpg');
+}
+
+.eliza p.character {
+    background-image: url('img/eliza.png');
+}
+
+.angelica p.character {
+    background-image: url('img/angelica.webp');
 }

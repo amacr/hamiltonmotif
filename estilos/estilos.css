@@ -13,6 +13,7 @@
 --color-washington: #AFC6E7;
 }
 
+/*Estilos generales*/
 
 html {
     background: var(--color-dark);
@@ -27,11 +28,14 @@ body {
     color: var(--color-text)
 }
 
+/* Donde se encuentra la canción Non Stop*/
+
 main {
     padding: 0 2rem 2rem;
     width: 25vw;
 }
 
+/* Sidebar con los datos dinámicos de los Motifs*/
 aside {
     height: 100%;
     width: 100%;
@@ -39,7 +43,11 @@ aside {
     top: 10px;
 }
 
-h1, h2, h3 {
+section {
+    padding: 40px 60px;
+}
+
+h1, h2, h3, h4 {
     font-family: 'Bodoni Moda SC', serif;
     font-weight: 400;
     letter-spacing: 3px;
@@ -62,11 +70,22 @@ h3 {
     font-size: 1.2rem;
 }
 
+h4 {
+    font-size: 1rem;
+    margin: 3px 0;
+}
+
 p {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     font-size: 1.05rem;
 }
+
+a {
+    color: var(--color-main);
+}
+
+/*Pinta el banner principal del header*/
 
 .hero {
     position: relative;
@@ -123,9 +142,7 @@ p {
     transform: translateY(-2px);
 }
 
-section {
-    padding: 40px 60px;
-}
+/* Estilos de la introducción de Non Stop */
 
 .content-wrapper {
     display: flex;
@@ -153,7 +170,7 @@ section {
     font-weight: 300;  /* Más delgado para el título */
 }
 
-/* Carrusel */
+/* De los estilos del carrusel */
 .carousel-container {
     flex: 1;
     position: relative;
@@ -246,12 +263,7 @@ section {
     display: flex;
 }
 
-/*#sidebar-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: auto 300px;
-    gap: 20px
-}*/
+/*Pinta la foto y el color asociado al personajes en la canción NonStop*/
 
 .motif {
     padding: 3px 0;
@@ -281,6 +293,9 @@ section {
 
 .angelica > * > span.motif {
     background-color: #D3B5F7;
+}
+.ensemble > * > span.motif {
+    background-color: var(--color-main);
 }
 
 .verse {
@@ -330,6 +345,11 @@ section {
 .angelica p.character {
     background-image: url('img/angelica.webp');
 }
+.ensemble p.character {
+    background-image: url('');
+}
+
+/*Pinta datos dinámicos del sidebar*/
 
 li.song {
     padding: 3px 0;
@@ -366,7 +386,11 @@ li.song:hover {
     grid-template-columns: 1fr 1fr;
 }
 
-/*Diagrama de arco*/
+/*Pinta diagrama de arco*/
+
+div#arc > h3 {
+    margin: 10px 0;
+}
 
 .cls-2 {
     font-size: 12px;

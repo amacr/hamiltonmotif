@@ -51,7 +51,10 @@ function paintArc (y) {
     resetArcClass(); 
     const arcClass = document.getElementsByClassName(y);
     for (let i=0; i < arcClass.length; i++){
+        //const arcClassCheck = "arc";
+        if (arcClass[i].classList.contains("arc")){
             arcClass[i].classList.add("active");
+            }
     }
 };
 

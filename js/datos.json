@@ -72,13 +72,13 @@
         },
         {
             "id": "m5",
-            "name": "History has it's eyes on you",
+            "name": "History has its eyes on you",
             "class": "washington",
             "character": "George Washington",
             "texto_motif":"TO DO",
             "songs":[
                 {
-                    "song_name": "History has it's eyes on you",
+                    "song_name": "History has its eyes on you",
                     "song_id":"c19",
                     "song_act": 1,
                     "song_sang_by":"George Washington",
